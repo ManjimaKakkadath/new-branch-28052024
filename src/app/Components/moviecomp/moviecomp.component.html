@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Release date</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Prod of varmovie">
+        <th>{{Prod.id}}</th>
+        <td>{{Prod.title}}</td>
+        <td>{{Prod.genre}}</td>
+        <td>{{Prod.reelasedate}}</td>
+        <td>
+          <!-- <a [routerLink]="['/addmovie','edit',Prod.id]">EDIT</a> -->
+          <a>EDIT</a></td> <td><a [routerLink]="['/EditMovie/edit',Prod.id]" >EDIT</a>
+        </td>
+        <td><a>DELETE </a></td>
+        <td><a [routerLink]="[]" (click)="DeleteMovies(Prod.id)">DELETE</a></td>      
+         </tr>      
+    </tbody>
+  </table>

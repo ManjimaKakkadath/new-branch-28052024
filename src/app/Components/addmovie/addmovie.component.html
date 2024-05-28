@@ -1,0 +1,19 @@
+<div class ="container">
+    <h1>Add New Product</h1>
+     <form #form ="ngForm" (ngSubmit) ="AddMovies()">
+    <div class="mb-3">
+      <label for="exampleInputmovies" class="form-label">Title</label>
+      <input type="text" class="form-control" id="exampleInputmoviestitle" aria-describedby="moviesTitle" name="exampleInputmoviestitle" [(ngModel)] ="NewMovies.title">
+      <div id="moviesTitle" class="form-text">this is the title for add movies</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputmoviesGenre" class="form-label" >Genre</label>
+      <input type="text" class="form-control" id="exampleInputmoviesGenre" name="exampleInputmoviesGenre" [(ngModel)] ="NewMovies.genre">
+    </div>
+    <div class="mb-3 form-check">
+        <label for="exampleInputReleaseDate" class="form-label">ReleaseDate</label>
+        <input type="date" class="form-control" id="exampleInputReleaseDate"  name="exampleInputReleaseDate" [(ngModel)] ="NewMovies.reelasedate">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>    
