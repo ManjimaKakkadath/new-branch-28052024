@@ -10,6 +10,7 @@ import { movies } from '../../Model/Movies';
 })
 
 export class MoviecompComponent  implements OnInit {
+  // test
   varmovie:movies[]=[];
   constructor(private movieservices : MovieserviceService, private router: Router) {}
   ngOnInit(): void {
